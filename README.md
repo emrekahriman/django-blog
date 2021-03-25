@@ -1,6 +1,7 @@
 # Django-Blog
 A simple django project
 
+<br>
 
 ## Installing
 
@@ -50,15 +51,16 @@ python manage.py createsuperuser
 ```
 python manage.py collectstatic
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
+<br>
 
 ## Running the tests
 
 ```
 python manage.py runserver
 ```
+And the project is ready for use on your computer!
+
+<br>
 
 ## Screenshots of the project
 
