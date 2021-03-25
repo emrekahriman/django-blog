@@ -34,6 +34,14 @@
     </section>
     <!-- END section -->
 
+    <style>
+        @media screen and (max-width: 524px) {
+            .spanyek{
+                height: 250px !important;
+            }
+        }
+    </style>
+
     <section class="site-section pt-0 pb-3">
     <div class="container">
     <div class="row mb-4">
@@ -50,12 +58,12 @@
                         <div class="post-entry-horzontal ">
                             <a style="width: 100%" href="{% url 'posts:postDetail' latestpost.category.slug latestpost.id latestpost.slug %}">
                                 <div class="image element-animate " data-animate-effect="fadeIn" style="background-image: url({{ latestpost.image.url }});"></div>
-                                <span class="text">
+                                <span class="text spanyek">
                                     <div class="post-meta ">
-                                        <span class="author mr-2"><img src="{{ latestpost.author.userdetail.image.url }}" alt="Colorlib"> {{ latestpost.author.username | title }}</span>&bullet;
-                                        <span class="mr-2">{{ latestpost.created | date }} </span> &bullet;
-                                        <span class="mr-2">{{ latestpost.category.name }}</span> &bullet;
-                                        <span class="ml-2"><span class="fa fa-eye"></span> {{ latestpost.getHitCount }}</span>
+                                        <span class="author mr-1"><img src="{{ latestpost.author.userdetail.image.url }}" alt="Colorlib"> {{ latestpost.author.username | title }}</span>&bullet;
+                                        <span class="mr-1">{{ latestpost.created | date }} </span> &bullet;
+                                        <span class="mr-1">{{ latestpost.category.name }}</span> &bullet;
+                                        <span><span class="fa fa-eye"></span> {{ latestpost.getHitCount }}</span>
                                     </div>
                                     <h2>{{ latestpost.title | title}}</h2>
                                     <p class="mb-0">{{ latestpost.content|safe|linebreaks|truncatechars:100 }}</p>
