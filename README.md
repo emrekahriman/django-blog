@@ -25,7 +25,7 @@ virtualenv venv
 source venv/Scripts/activate
 ```
 
-4)- Install requirements
+4)- Install requirements.txt
 
 ```
 pip install -r requirements
