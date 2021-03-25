@@ -25,10 +25,10 @@ virtualenv venv
 source venv/Scripts/activate
 ```
 
-4)- Install requirements.txt
+4)- Install requirements
 
 ```
-pip install -r requirements
+pip install -r requirements.txt
 ```
 Note: Above lines are required for first time installation
 
