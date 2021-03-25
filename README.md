@@ -1,8 +1,8 @@
-
+# Django-Blog
 A simple django project
 
 
-### Installing
+## Installing
 
 Step by step commands on how to run this project on your computer
 
