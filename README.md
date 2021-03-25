@@ -1,6 +1,7 @@
 # Django-Blog
 A simple django project
 
+### Live Preview: https://www.emrekhrmnn.cf/
 <br>
 
 ## Installing
