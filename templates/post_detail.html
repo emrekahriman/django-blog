@@ -17,8 +17,8 @@
             <span class="mr-1">{{ post.category.name }}</span> &bullet;
             <span class="ml-1"><span class="fa fa-eye"></span> {{ post.getHitCount }}</span>
         </div>
-        <h1 class="mb-4">{{ post.title | title }}</h1>
-        <a class="category mb-5" href="{% url 'posts:posts_by_category' post.category.slug %}">{{ post.category.name }}</a>
+        <h1 class="mb-1">{{ post.title | title }}</h1>
+        <a class="category mb-3" href="{% url 'posts:posts_by_category' post.category.slug %}">{{ post.category.name }}</a>
 
 
 
