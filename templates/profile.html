@@ -44,9 +44,6 @@
                     .imgyek{
                         height: 250px !important;
                     }
-                    .catyek{
-                        display: none !important;
-                    }
                 }
             </style>
 
@@ -58,7 +55,6 @@
                                 <button class="btn btn-primary btn-sm rounded-bottom rounded-right py-0 px-1 ml-1 mt-1" style="font-size: 20px" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-cog"></i></button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
                                     <li><a class="dropdown-item" href="{% url 'posts:postUpdate' post.slug %}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update</a></li>
-                                    {#<li><a class="dropdown-item " href="{% url 'posts:postDelete' post.id %}"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a></li>#}
                                     <form action="{% url 'posts:postDelete' post.id %}" method="post" onsubmit="return confirm('Are you sure, you want to delete post?')" style="display: inline;">
                                         {% csrf_token %}
                                         <input type="hidden" name="patient_id" value="{{ patient.id }}" />
@@ -73,7 +69,6 @@
                                     <div class="post-meta">
                                         <span class="author mr-1"><img src="{{ post.author.userdetail.image.url }}" alt="Colorlib"> {{ post.author.username | title }} &bullet; </span>
                                         <span>{{ post.created | date }} &bullet;</span>
-                                        <span class="catyek">{{ post.category.name }} &bullet;</span>
                                         <span><span class="fa fa-eye"></span> {{ post.getHitCount }}</span>
                                     </div>
                                     <h2>{{ post.title | title | truncatechars:30}}</h2>
