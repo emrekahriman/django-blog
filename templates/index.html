@@ -37,11 +37,14 @@
     <style>
         @media screen and (max-width: 524px) {
             .spanyek{
-                height: 260px !important;
+                height: 280px !important;
             }
             .spanyek p{
                 margin: 0 !important;
                 margin-top: 15px !important;
+            }
+            .catyek{
+                display: none !important;
             }
         }
     </style>
@@ -64,9 +67,9 @@
                                 <div class="image element-animate " data-animate-effect="fadeIn" style="background-image: url({{ latestpost.image.url }});"></div>
                                 <span class="text spanyek">
                                     <div class="post-meta ">
-                                        <span class="author mr-1"><img src="{{ latestpost.author.userdetail.image.url }}" alt="Colorlib"> {{ latestpost.author.username | title }}</span>&bullet;
-                                        <span class="mr-1">{{ latestpost.created | date }} </span> &bullet;
-                                        <span class="mr-1">{{ latestpost.category.name }}</span> &bullet;
+                                        <span class="author mr-1"><img src="{{ latestpost.author.userdetail.image.url }}" alt="Colorlib"> {{ latestpost.author.username | title }} &bullet; </span>
+                                        <span>{{ latestpost.created | date }} &bullet;</span>
+                                        <span class="catyek">{{ latestpost.category.name }} &bullet;</span>
                                         <span><span class="fa fa-eye"></span> {{ latestpost.getHitCount }}</span>
                                     </div>
                                     <h2>{{ latestpost.title | title}}</h2>
