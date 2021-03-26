@@ -67,7 +67,7 @@
                             <a href="{% url 'posts:postDetail' post.category.slug post.id post.slug %}" class="" data-animate-effect="fadeIn">
                                 <div class="blog-content-body">
                                     <div class="post-meta">
-                                        <span class="author mr-1"><img src="{{ post.author.userdetail.image.url }}" alt="Colorlib"> {{ post.author.username | title }} &bullet; </span>
+                                        <span class="author"><img src="{{ post.author.userdetail.image.url }}" alt="Colorlib"> {{ post.author.username | title }} &bullet; </span>
                                         <span>{{ post.created | date }} &bullet;</span>
                                         <span><span class="fa fa-eye"></span> {{ post.getHitCount }}</span>
                                     </div>

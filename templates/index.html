@@ -66,7 +66,7 @@
                                 <div class="image element-animate " data-animate-effect="fadeIn" style="background-image: url({{ latestpost.image.url }});"></div>
                                 <span class="text spanyek">
                                     <div class="post-meta ">
-                                        <span class="author mr-1"><img src="{{ latestpost.author.userdetail.image.url }}" alt="Colorlib"> {{ latestpost.author.username | title }} &bullet; </span>
+                                        <span class="author"><img src="{{ latestpost.author.userdetail.image.url }}" alt="Colorlib"> {{ latestpost.author.username | title }} &bullet; </span>
                                         <span>{{ latestpost.created | date }} &bullet;</span>
                                         <span class="catyek">{{ latestpost.category.name }} &bullet;</span>
                                         <span><span class="fa fa-eye"></span> {{ latestpost.getHitCount }}</span>
