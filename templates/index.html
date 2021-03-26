@@ -73,7 +73,7 @@
                                         <span><span class="fa fa-eye"></span> {{ latestpost.getHitCount }}</span>
                                     </div>
                                     <h2>{{ latestpost.title | title}}</h2>
-                                    <p class="mb-0">{{ latestpost.content|safe|linebreaks|truncatechars:100 }}</p>
+                                    {{ latestpost.content|safe|linebreaks|truncatechars:100 }}
                                 </span>
                             </a>
                         </div>
