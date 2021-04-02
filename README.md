@@ -1,7 +1,7 @@
 # Django-Blog
 A simple django project
 
-### Live Preview: https://www.emrekhrmnn.cf/  [go](http://stackoverflow.com){:target="_blank" rel="noopener"}
+### Live Preview: https://www.emrekhrmnn.cf/ -- <a href="http://example.com/" target="_blank">example</a>
 <br>
 
 ## Installing
