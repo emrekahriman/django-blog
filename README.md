@@ -1,7 +1,7 @@
 # Django-Blog
 A simple django project
 
-### Live Preview: https://www.emrekhrmnn.cf/ -- <a href="http://example.com/" target="_blank">example</a>
+### Live Preview: https://www.emrekhrmnn.cf/ -- <a href="https://emrekhrmnn.cf" target="_blank" rel="noopener"><span>Example Text</span> </a>.
 <br>
 
 ## Installing
