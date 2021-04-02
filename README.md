@@ -1,7 +1,7 @@
 # Django-Blog
 A simple django project
 
-### Live Preview: https://www.emrekhrmnn.cf/ -- blah blah <a href="http://htmlpreview.github.com/?https://github.com/<repo>/<path>/blob/master/<my html file.html" target="_blank">comment</a>**
+### Live Preview: https://www.emrekhrmnn.cf/
 <br>
 
 ## Installing
